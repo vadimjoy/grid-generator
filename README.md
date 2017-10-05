@@ -1,5 +1,6 @@
 # grid-generator
 
+```json
 {
   "desktop": [ - prefix -d (first letter of key)
     1900, - d1 (index of array)
@@ -22,206 +23,323 @@
   "other" : [] -o
   ..and for other
 }
+```
 
-Grid
+## **Grid**
+```html
+<div class=""></div>
 
-.grid-full {
-    width: 100%;
-}
+<div class="grid grid-full">
+    ...width 100%;
+</div>
 
-.grid-auto {
-    width: auto;
-}
+<div class="grid grid-auto">
+    ...width auto;
+</div>
 
-.grid-float > .row > .col {
-    float: left;
-}
+<div class="grid grid-float">
+    <div class="row">
+        <div class="col">
+            ...float left
+        </div>
+    </div>
+</div>
 
-.grid-float-r > .row > .col {
-    float: right;
-}
+<div class="grid grid-float-r">
+    <div class="row">
+        <div class="col">
+            ...float right
+        </div>
+    </div>
+</div>
 
-.grid-no-float > .row > .col {
-    float: none;
-}
+<div class="grid grid-no-float">
+    <div class="row">
+        <div class="col">
+            ...float none
+        </div>
+    </div>
+</div>
 
-.grid-block > .row > .col {
-    display: block;
-}
+<div class="grid grid-block">
+    <div class="row">
+        <div class="col">
+            ...display block
+        </div>
+    </div>
+</div>
 
-.grid-inline > .row > .col {
-    display: inline-block;
-}
+<div class="grid grid-inline">
+    <div class="row">
+           ..font-size 0
+        <div class="col">
+            ...display inline-block
+        </div>
+    </div>
+</div>
 
-.grid-inline > .row {
-    font-size: 0;
-}
+<div class="grid grid-table">
+    ...display table
+    <div class="row">
+        ...display table-row
+        <div class="col">
+            ...display table-cell
+        </div>
+    </div>
+</div>
 
-.grid-table {
-    display: table;
-}
+<div class="grid grid-table"> ..or inline
+    ...display table
+    <div class="row row-top">
+        ...display table-row
+        <div class="col">
+            ...display table-cell
+            ..vertical-align top
+        </div>
+    </div>
+</div>
 
-.grid-table > .row {
-    display: table-row;
-}
+<div class="grid grid-table"> ..or inline
+    ...display table
+    <div class="row row-middle">
+        ...display table-row
+        <div class="col">
+            ...display table-cell
+            ..vertical-align middle
+        </div>
+    </div>
+</div>
 
-.grid-table > .row > .col {
-    display: table-cell;
-}
+<div class="grid grid-table"> ..or inline
+    ...display table
+    <div class="row row-bottom">
+        ...display table-row
+        <div class="col">
+            ...display table-cell
+            ..vertical-align bottom
+        </div>
+    </div>
+</div>
 
-.grid-table > .row.row-top > .col,
-.grid-inline > .row.row-top > .col {
-    vertical-align: top;
-}
+<div class="grid grid-table"> ..or inline
+    ...display table
+    <div class="row row-base">
+        ...display table-row
+        <div class="col">
+            ...display table-cell
+            ..vertical-align baseline
+        </div>
+    </div>
+</div>
 
-.grid-table > .row.row-middle > .col,
-.grid-inline > .row.row-middle > .col {
-    vertical-align: middle;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row">
+        ...width 100%
+        ...display flex
+    </div>
+</div>
 
-.grid-table > .row.row-middle > .col,
-.grid-inline > .row.row-middle > .col {
-    vertical-align: bottom;
-}
+<div class="grid grid-flex grid-inline-flex">
+    ...display block
+    <div class="row">
+        ...width 100%
+        ...display inline-flex
+    </div>
+</div>
+```
+## For flex grid
+### justify-content
+```html
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-start">
+        ...justify-content flex-start
+    </div>
+</div>
 
-.grid-table > .row.row-base > .col,
-.grid-inline > .row.row-base > .col {
-    vertical-align: baseline;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-start">
+        ...justify-content flex-start
+    </div>
+</div>
 
-.grid-flex {
-    display: block;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-end">
+        ...justify-content flex-end
+    </div>
+</div>
 
-.grid-flex > .row {
-     width: 100%;
-     display: -webkit-flex;
-     display: flex;
- }
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-center">
+        ...justify-content center
+    </div>
+</div>
 
-.grid-inline-flex > .row {
-    display: -webkit-inline-flex;
-    display: inline-flex
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-s-a">
+        ...justify-content space-around
+    </div>
+</div>
+```
+### align-items
+```html
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ai-str">
+        ...align-items stretch
+    </div>
+</div>
 
-.grid-flex > .row.row-start {
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ai-start">
+        ...align-items flex-start
+    </div>
+</div>
 
-.grid-flex > .row.row-end {
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ai-end">
+        ...align-items flex-end
+    </div>
+</div>
 
-.grid-flex > .row.row-center {
-    -webkit-justify-content: center;
-    justify-content: center;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ai-center">
+        ...align-items center
+    </div>
+</div>
 
-.grid-flex > .row.row-s-b {
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ai-base">
+        ...align-items baseline
+    </div>
+</div>
+```
+### flex-direction
+```html
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-d">
+        ...flex-direction row
+    </div>
+</div>
 
-.grid-flex > .row.row-s-a {
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-d-rev">
+        ...flex-direction row-reverse
+    </div>
+</div>
 
-.grid-flex > .row.row-ai-str {
-    -webkit-align-items: stretch;
-    align-items: stretch;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-d-col">
+        ...flex-direction column
+    </div>
+</div>
 
-.grid-flex > .row.row-ai-start {
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-d-c-rev">
+        ...flex-direction column-reverse
+    </div>
+</div>
 
-.grid-flex > .row.row-ai-end {
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-d-c-rev">
+        ...flex-direction column-reverse
+    </div>
+</div>
+```
+### flex-wrap
+```html
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-w">
+        ...flex-wrap wrap
+    </div>
+</div>
 
-.grid-flex > .row.row-ai-center {
-    -webkit-align-items: center;
-    align-items: center;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-w-no">
+        ...flex-wrap nowrap
+    </div>
+</div>
 
-.grid-flex > .row.row-ai-base {
-    -webkit-align-items: baseline;
-    align-items: baseline;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-w-rev">
+        ...flex-wrap wrap-reverse
+    </div>
+</div>
+```
+### align-content
+```html
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ac-start">
+        ...align-content flex-start
+    </div>
+</div>
 
-.grid-flex > .row.row-d {
-    -webkit-flex-direction: row;
-    flex-direction: row;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ac-end">
+        ...align-content flex-end
+    </div>
+</div>
 
-.grid-flex > .row.row-d-rev {
-    -webkit-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ac-center">
+        ...align-content flex-center
+    </div>
+</div>
 
-.grid-flex > .row.row-d-col {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ac-s-b">
+        ...align-content space-between
+    </div>
+</div>
 
-.grid-flex > .row.row-d-c-rev {
-    -webkit-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ac-s-a">
+        ...align-content space-around
+    </div>
+</div>
 
-.grid-flex > .row.row-w {
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
+<div class="grid grid-flex">
+    ...display block
+    <div class="row row-ac-str">
+        ...align-content stretch
+    </div>
+</div>
+```
 
-.grid-flex > .row.row-w-no {
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-}
 
-.grid-flex > .row.row-w-rev {
-    -webkit-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
-}
-
-/* With flex-direction & flex-wrap*/
-.grid-flex > .row.row-ac-start {
-    -webkit-align-content: flex-start;
-    align-content: flex-start;
-}
-
-.grid-flex > .row.row-ac-end {
-    -webkit-align-content: flex-end;
-    align-content: flex-end;
-}
-
-.grid-flex > .row.row-ac-center {
-    -webkit-align-content: center;
-    align-content: center;
-}
-
-.grid-flex > .row.row-ac-s-b {
-    -webkit-align-content: space-between;
-    align-content: space-between;
-}
-
-.grid-flex > .row.row-ac-s-a {
-    -webkit-align-content: space-around;
-    align-content: space-around;
-}
-
-.grid-flex > .row.row-ac-str {
-    -webkit-align-content: stretch;
-    align-content: stretch;
-}
-
-Columns
-
+## **Columns**
+```html
+<div class="grid">
+    <div class="row">
+        <div class="col col-*index*">
+            ...width
+        </div>
+    </div>
+</div>
+```
+```css
 .grid > .row > .col.col-0 {
     width: 100%;
 }
@@ -317,3 +435,4 @@ Columns
 .grid > .row > .col.col-16 {
     width: 6.25%;
 }
+```

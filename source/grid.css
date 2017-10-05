@@ -52,8 +52,8 @@
     vertical-align: middle;
 }
 
-.grid-table > .row.row-middle > .col,
-.grid-inline > .row.row-middle > .col {
+.grid-table > .row.row-bottom > .col,
+.grid-inline > .row.row-bottom > .col {
     vertical-align: bottom;
 }
 
