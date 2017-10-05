@@ -35,8 +35,6 @@
 
 ## **Grid**
 ```html
-<div class=""></div>
-
 <div class="grid grid-full">
     ...width 100%;
 </div>
