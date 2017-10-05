@@ -1,30 +1,3 @@
-# grid-generator
-
-{
-  "desktop": [ - prefix -d (first letter of key)
-    1900, - d1 (index of array)
-    1600, ..d2
-    1440, ..d3
-    1366  ..d4
-  ],
-  "laptop": [ -l
-    1280, -l1
-    1024 ..l2
-  ],
-  "tablet": [ -t
-    800, -t1
-    600 ..t2
-  ],
-  "mobile": [ -m
-    480, -m1
-    360 ..m2
-  ],
-  "other" : [] -o
-  ..and for other
-}
-
-Grid
-
 .grid-full {
     width: 100%;
 }
@@ -94,10 +67,10 @@ Grid
 }
 
 .grid-flex > .row {
-     width: 100%;
-     display: -webkit-flex;
-     display: flex;
- }
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+}
 
 .grid-inline-flex > .row {
     display: -webkit-inline-flex;
@@ -219,8 +192,6 @@ Grid
     -webkit-align-content: stretch;
     align-content: stretch;
 }
-
-Columns
 
 .grid > .row > .col.col-0 {
     width: 100%;
