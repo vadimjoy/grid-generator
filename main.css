@@ -24,3 +24,8 @@ body {
 .themed-col3 {
     background-color: darkseagreen;
 }
+
+.themed-col3 span {
+    display: block;
+    font-size: 15px;
+}
