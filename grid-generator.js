@@ -261,7 +261,7 @@ class Generator {
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: ${bp}px) {
     .fx-row-${bp} {
         display: -ms-flexbox;
         display: -webkit-flex;
