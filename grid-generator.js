@@ -522,7 +522,7 @@ class Generator {
     }
 
     generateMin() {
-        const prefix = 'mt';
+        const prefix = 'gt';
         for (let bp of this.config['breakpoints'].reverse()) {
             fs.appendFileSync(this.output, this.model_min(bp, prefix));
         }
