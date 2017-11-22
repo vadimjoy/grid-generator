@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<h2>Columns</h2>
+<p><b>Hidden on 1366:</b> fx-lt-hidden-1366</p>
+
+<div class="fx-row fx-wrap fx-ai-center fx-lt-hidden-1366">
+    <div class="fx-col-12 themed-col1">fx-col-12</div>
+    <div class="fx-col-11 themed-col2">fx-col-11</div>
+    <div class="fx-col-10 themed-col3">fx-col-10</div>
+    <div class="fx-col-9 themed-col1">fx-col-9</div>
+    <div class="fx-col-8 themed-col2">fx-col-8</div>
+    <div class="fx-col-7 themed-col3">fx-col-7</div>
+    <div class="fx-col-6 themed-col1">fx-col-6</div>
+    <div class="fx-col-5 themed-col2">fx-col-5</div>
+    <div class="fx-col-4 themed-col3">fx-col-4</div>
+    <div class="fx-col-3 themed-col1">fx-col-3</div>
+    <div class="fx-col-2 themed-col2">fx-col-2</div>
+    <div class="fx-col-1 themed-col3">fx-col-1</div>
+</div>
+<br>
+
+<h2>Columns</h2>
+<p><b>Showed on 1366:</b> fx-gt-hidden-1366</p>
+
+<div class="fx-row fx-wrap fx-ai-center fx-gt-hidden-1366">
+    <div class="fx-col-12 themed-col1">fx-col-12</div>
+    <div class="fx-col-11 themed-col2">fx-col-11</div>
+    <div class="fx-col-10 themed-col3">fx-col-10</div>
+</div>
+<br>
+
+<h2>Adaptive</h2>
+
+<div class="fx-row fx-wrap fx-ai-center">
+    <div class="fx-col-12 themed-col1">COL1 (fx-col-12)</div>
+    <div class="fx-col-6 fx-col-12-1024 themed-col2">COL2 (fx-col-6 fx-col-12-1024)</div>
+    <div class="fx-row fx-wrap fx-col-6 fx-col-12-1024">
+        <div class="fx-col-6 fx-col-12-1600 fx-col-6-1024 fx-col-12-480 themed-col3">COL3 (fx-col-6 fx-col-12-1600
+            fx-col-6-1024 fx-col-12-480)
+        </div>
+        <div class="fx-col-6 fx-col-12-1600 fx-col-6-1024 fx-col-12-480 themed-col3">COL4 (fx-col-6 fx-col-12-1600
+            fx-col-6-1024 fx-col-12-480)
+        </div>
+    </div>
+</div>
+</body>
+</html>

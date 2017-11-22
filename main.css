@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.themed-col1,
+.themed-col2,
+.themed-col3 {
+    color: #ebebeb;
+    font-size: 20px;
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+
+.themed-col1 {
+    background-color: coral;
+}
+
+.themed-col2 {
+    background-color: cornflowerblue;
+}
+
+.themed-col3 {
+    background-color: darkseagreen;
+}

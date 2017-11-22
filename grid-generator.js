@@ -5,335 +5,238 @@ const fs = require('fs');
 class Generator {
     constructor(config) {
         this.config = config;
-        this.display = {};
-        this.output = 'grid.css';
+        this.output = './dist/grid.css';
 
-        let temp = fs.readFileSync(path.resolve('./source/grid.css'));
+        let temp = fs.readFileSync(path.resolve('./src/grid.css'));
         fs.writeFileSync(this.output, temp);
 
-        this.model_media = (res, prefix) => {
+        this.model_media = (bp) => {
             return `
 
-@media (min-width: ${res + 1}px) {
-    .h-gte${prefix} {
+@media (min-width: ${bp + 1}px) {
+    .fx-gt-hidden-${bp} {
         display: none!important;
     }
 }
 
-@media (max-width: ${res}px) {
-    .grid-full${prefix} {
-        width: 100%;
+@media (max-width: ${bp}px) {
+    .fx-lt-hidden-${bp} {
+        display: none!important;
     }
 
-    .grid-auto${prefix} {
-        width: auto;
-    }
-
-    .grid-float${prefix} > .row > .col {
-        float: left;
-    }
-
-    .grid-float-r${prefix} > .row > .col {
-        float: right;
-    }
-
-    .grid-no-float${prefix} > .row > .col {
-        float: none;
-    }
-
-    .grid-block${prefix} > .row > .col {
-        display: block;
-    }
-
-    .grid-inline${prefix} > .row > .col {
-        display: inline-block;
-    }
-
-    .grid-inline${prefix} > .row {
-        font-size: 0;
-    }
-
-    .grid-table${prefix} {
-        display: table;
-    }
-
-    .grid-table${prefix} > .row {
-        display: table-row;
-    }
-
-    .grid-table${prefix} > .row > .col {
-        display: table-cell;
-    }
-
-    .grid-table${prefix} > .row.row-top > .col {
-        vertical-align: top;
-    }
-
-    .grid-table${prefix} > .row.row-middle > .col {
-        vertical-align: middle;
-    }
-
-    .grid-table${prefix} > .row.row-bottom > .col {
-        vertical-align: bottom;
-    }
-
-    .grid-table${prefix} > .row.row-base > .col {
-        vertical-align: baseline;
-    }
-
-    .grid-flex${prefix} {
-        display: block;
-    }
-
-    .grid-flex${prefix} > .row {
+    .fx-row-${bp} {
         display: -webkit-flex;
         display: flex;
     }
 
-    .grid-flex > .row.row-start${prefix} {
+    .fx-row.fx-inline-${bp} {
+        display: -webkit-inline-flex;
+        display: inline-flex
+    }
+
+    .fx-row.fx-start-${bp} {
         -webkit-justify-content: flex-start;
         justify-content: flex-start;
     }
 
-    .grid-flex > .row.row-end${prefix} {
+    .fx-row.fx-end-${bp} {
         -webkit-justify-content: flex-end;
         justify-content: flex-end;
     }
 
-    .grid-flex > .row.row-center${prefix} {
+    .fx-row.fx-center-${bp} {
         -webkit-justify-content: center;
         justify-content: center;
     }
 
-    .grid-flex > .row.row-s-b${prefix} {
+    .fx-row.fx-sp-between-${bp} {
         -webkit-justify-content: space-between;
         justify-content: space-between;
     }
 
-    .grid-flex > .row.row-s-a${prefix} {
+    .fx-row.fx-sp-around-${bp} {
         -webkit-justify-content: space-around;
         justify-content: space-around;
     }
 
-    .grid-flex > .row.row-ai-str${prefix} {
+    .fx-row.fx-ai-stretch-${bp} {
         -webkit-align-items: stretch;
         align-items: stretch;
     }
 
-    .grid-flex > .row.row-ai-start${prefix} {
+    .fx-row.fx-ai-start-${bp} {
         -webkit-align-items: flex-start;
         align-items: flex-start;
     }
 
-    .grid-flex > .row.row-ai-end${prefix} {
+    .fx-row.fx-ai-end-${bp} {
         -webkit-align-items: flex-end;
         align-items: flex-end;
     }
 
-    .grid-flex > .row.row-ai-center${prefix} {
+    .fx-row.fx-ai-center-${bp} {
         -webkit-align-items: center;
         align-items: center;
     }
 
-    .grid-flex > .row.row-ai-base${prefix} {
+    .fx-row.fx-ai-base-${bp} {
         -webkit-align-items: baseline;
         align-items: baseline;
     }
 
-    .grid-flex > .row.row-d${prefix} {
+    .fx-row.fx-dir-row-${bp} {
         -webkit-flex-direction: row;
         flex-direction: row;
     }
 
-    .grid-flex > .row.row-d-rev${prefix} {
+    .fx-row.fx-dir-row-rev-${bp} {
         -webkit-flex-direction: row-reverse;
         flex-direction: row-reverse;
     }
 
-    .grid-flex > .row.row-d-col${prefix} {
+    .fx-row.fx-dir-col-${bp} {
         -webkit-flex-direction: column;
         flex-direction: column;
     }
 
-    .grid-flex > .row.row-d-c-rev${prefix} {
+    .fx-row.fx-dir-col-rev-${bp} {
         -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
 
-    .grid-flex > .row.row-w${prefix} {
+    .fx-row.fx-wrap-${bp} {
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
-    .grid-flex > .row.row-w-no${prefix} {
+    .fx-row.fx-nowrap-${bp} {
         -webkit-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
 
-    .grid-flex > .row.row-w-rev${prefix} {
+    .fx-row.fx-wrap-rev-${bp} {
         -webkit-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
     }
 
-    .grid-flex > .row.row-ac-start${prefix} {
+    .fx-row.fx-ac-start-${bp} {
         -webkit-align-content: flex-start;
         align-content: flex-start;
     }
 
-    .grid-flex > .row.row-ac-end${prefix} {
+    .fx-row.fx-ac-end-${bp} {
         -webkit-align-content: flex-end;
         align-content: flex-end;
     }
 
-    .grid-flex > .row.row-ac-center${prefix} {
+    .fx-row.fx-ac-center-${bp} {
         -webkit-align-content: center;
         align-content: center;
     }
 
-    .grid-flex > .row.row-ac-s-b${prefix} {
+    .fx-row.fx-ac-between-${bp} {
         -webkit-align-content: space-between;
         align-content: space-between;
     }
 
-    .grid-flex > .row.row-ac-s-a${prefix} {
+    .fx-row.fx-ac-around-${bp} {
         -webkit-align-content: space-around;
         align-content: space-around;
     }
 
-    .grid-flex > .row.row-ac-str${prefix} {
+    .fx-row.fx-ac-stretch-${bp} {
         -webkit-align-content: stretch;
         align-content: stretch;
     }
 
-    .h-lte${prefix} {
-        display: none !important;;
+    .col-auto-${bp} {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
     }
 
-    .grid > .row > .col.col-0${prefix} {
-        width: 100%;
+    .fx-col-1-${bp} {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
     }
 
-    .grid > .row > .col.col-90${prefix} {
-        width: 90%;
+    .fx-col-2-${bp} {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
     }
 
-    .grid > .row > .col.col-80${prefix} {
-        width: 80%;
+    .fx-col-3-${bp} {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
     }
 
-    .grid > .row > .col.col-70${prefix} {
-        width: 70%;
+    .fx-col-4-${bp} {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
     }
 
-    .grid > .row > .col.col-60${prefix} {
-        width: 60%;
+    .fx-col-5-${bp} {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
     }
 
-    .grid > .row > .col.col-2${prefix} {
-        width: 50%;
+    .fx-col-6-${bp} {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
-    .grid > .row > .col.col-45${prefix} {
-        width: 45%;
+    .fx-col-7-${bp} {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
     }
 
-    .grid > .row > .col.col-40${prefix} {
-        width: 40%;
+    .fx-col-8-${bp} {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
     }
 
-    .grid > .row > .col.col-35${prefix} {
-        width: 35%;
+    .fx-col-9-${bp} {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
     }
 
-    .grid > .row > .col.col-3${prefix} {
-        width: 33.33333333%
+    .fx-col-10-${bp} {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
     }
 
-    .grid > .row > .col.col-30${prefix} {
-        width: 30%;
+    .fx-col-11-${bp} {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
     }
 
-    .grid > .row > .col.col-4${prefix} {
-        width: 25%;
-    }
-
-    .grid > .row > .col.col-5${prefix} {
-        width: 20%
-    }
-
-    .grid > .row > .col.col-6${prefix} {
-        width: 16.66666667%;
-    }
-
-    .grid > .row > .col.col-7${prefix} {
-        width: 14.28571429%;
-    }
-
-    .grid > .row > .col.col-8${prefix} {
-        width: 12.5%;
-    }
-
-    .grid > .row > .col.col-9${prefix} {
-        width: 11.11111111%;
-    }
-
-    .grid > .row > .col.col-10${prefix} {
-        width: 10%;
-    }
-
-    .grid > .row > .col.col-11${prefix} {
-        width: 9.09090909%;
-    }
-
-    .grid > .row > .col.col-12${prefix} {
-        width: 8.33333333%;
-    }
-
-    .grid > .row > .col.col-13${prefix} {
-        width: 7.69230769%;
-    }
-
-    .grid > .row > .col.col-14${prefix} {
-        width: 7.14285714%;
-    }
-
-    .grid > .row > .col.col-15${prefix} {
-        width: 6.66666667%;
-    }
-
-    .grid > .row > .col.col-16${prefix} {
-        width: 6.25%;
+    .fx-col-12-${bp} {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }`
         }
     }
 
     generate() {
-        let i = 1;
-        for (let res of this.display.res) {
-            fs.appendFileSync(this.output, this.model_media(res, this.display.prefix + i));
-            i++;
+        for (let bp of this.config['breakpoints']) {
+            fs.appendFileSync(this.output, this.model_media(bp));
         }
-    }
-
-    init() {
-        this.display.res = this.config['desktop'];
-        this.display.prefix = '-d';
-        this.generate();
-
-        this.display.res = this.config['laptop'];
-        this.display.prefix = '-l';
-        this.generate();
-
-        this.display.res = this.config['tablet'];
-        this.display.prefix = '-t';
-        this.generate();
-
-        this.display.res = this.config['mobile'];
-        this.display.prefix = '-m';
-        this.generate();
     }
 }
 
-var generator = new Generator(config).init();
+var generator = new Generator(config).generate();
 
