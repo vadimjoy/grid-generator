@@ -70,6 +70,18 @@
     align-items: baseline;
 }
 
+.fx-ai-initial {
+    -ms-align-items: initial;
+    -webkit-align-items: initial;
+    align-items: initial;
+}
+
+.fx-ai-inherit {
+    -ms-align-items: inherit;
+    -webkit-align-items: inherit;
+    align-items: inherit;
+}
+
 .fx-dir-row {
     -ms-flex-direction: row;
     -webkit-flex-direction: row;
@@ -92,6 +104,18 @@
     -ms-flex-direction: column-reverse;
     -webkit-flex-direction: column-reverse;
     flex-direction: column-reverse;
+}
+
+.fx-dir-initial {
+    -ms-flex-direction: initial;
+    -webkit-flex-direction: initial;
+    flex-direction: initial;
+}
+
+.fx-dir-inherit {
+    -ms-flex-direction: inherit;
+    -webkit-flex-direction: inherit;
+    flex-direction: inherit;
 }
 
 .fx-wrap {
@@ -242,5 +266,5 @@
 }
 
 .fx-hidden {
-    display: none!important;
+    display: none !important;
 }

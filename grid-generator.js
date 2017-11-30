@@ -86,6 +86,18 @@ class Generator {
         align-items: baseline;
     }
 
+    .fx-ai-initial-${bp} {
+        -ms-align-items: initial;
+        -webkit-align-items: initial;
+        align-items: initial;
+    }
+
+    .fx-ai-inherit-${bp} {
+        -ms-align-items: inherit;
+        -webkit-align-items: inherit;
+        align-items: inherit;
+    }
+
     .fx-dir-row-${bp} {
         -ms-flex-direction: row;
         -webkit-flex-direction: row;
@@ -108,6 +120,18 @@ class Generator {
         -ms-flex-direction: column-reverse;
         -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
+    }
+
+    .fx-dir-initial-${bp} {
+        -ms-flex-direction: initial;
+        -webkit-flex-direction: initial;
+        flex-direction: initial;
+    }
+
+    .fx-dir-inherit-${bp} {
+        -ms-flex-direction: inherit;
+        -webkit-flex-direction: inherit;
+        flex-direction: inherit;
     }
 
     .fx-wrap-${bp} {
@@ -338,6 +362,18 @@ class Generator {
         align-items: baseline;
     }
 
+    .fx-ai-initial-${prefix}-${bp} {
+        -ms-align-items: initial;
+        -webkit-align-items: initial;
+        align-items: initial;
+    }
+
+    .fx-ai-inherit-${prefix}-${bp} {
+        -ms-align-items: inherit;
+        -webkit-align-items: inherit;
+        align-items: inherit;
+    }
+
     .fx-dir-row-${prefix}-${bp} {
         -ms-flex-direction: row;
         -webkit-flex-direction: row;
@@ -360,6 +396,18 @@ class Generator {
         -ms-flex-direction: column-reverse;
         -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
+    }
+
+    .fx-dir-initial-${prefix}-${bp} {
+        -ms-flex-direction: initial;
+        -webkit-flex-direction: initial;
+        flex-direction: initial;
+    }
+
+    .fx-dir-inherit-${prefix}-${bp} {
+        -ms-flex-direction: inherit;
+        -webkit-flex-direction: inherit;
+        flex-direction: inherit;
     }
 
     .fx-wrap-${prefix}-${bp} {

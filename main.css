@@ -29,3 +29,13 @@ body {
     display: block;
     font-size: 15px;
 }
+
+.themed-label {
+    color: #ffffff;
+    background-color: green;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 7px 10px 5px 10px;
+    border-radius: 5px;
+}

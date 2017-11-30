@@ -43,18 +43,177 @@
 <h2>Adaptive less than breakpoint</h2>
 
 <div class="fx-row fx-wrap">
-    <div class="fx-col-6 fx-col-12-1280 fx-col-12-1024 themed-col1">COL1 (fx-col-6)</div>
-    <div class="fx-col-3 fx-col-6-1280 fx-col-12-1024 themed-col2">COL2 (fx-col-3)</div>
-    <div class="fx-col-3 fx-col-6-1280 fx-col-12-1024 themed-col3">COL3 (fx-col-3)</div>
+    <div class="fx-col-6 fx-col-12-1280 fx-col-12-1024 themed-col1">COL1 (fx-col-6 fx-col-12-1280 fx-col-12-1024)</div>
+    <div class="fx-col-3 fx-col-6-1280 fx-col-12-1024 themed-col2">COL2 (fx-col-3 fx-col-6-1280 fx-col-12-1024)</div>
+    <div class="fx-col-3 fx-col-6-1280 fx-col-12-1024 themed-col3">COL3 (fx-col-3 fx-col-6-1280 fx-col-12-1024)</div>
 </div>
 
 <h2>Adaptive more than breakpoint</h2>
 
 <div class="fx-row fx-wrap">
-    <div class="fx-col-12 fx-col-12-gt-1024 fx-col-6-gt-1280 themed-col1">COL1 (fx-col-6)</div>
-    <div class="fx-col-12 fx-col-6-gt-1024 fx-col-3-gt-1280 themed-col2">COL2 (fx-col-3)</div>
-    <div class="fx-col-12 fx-col-6-gt-1024 fx-col-3-gt-1280 themed-col3">COL3 (fx-col-3)</div>
+    <div class="fx-col-12 fx-col-12-gt-1024 fx-col-6-gt-1280 themed-col1">COL1 (fx-col-12 fx-col-12-gt-1024
+        fx-col-6-gt-1280)
+    </div>
+    <div class="fx-col-12 fx-col-6-gt-1024 fx-col-3-gt-1280 themed-col2">COL2 (fx-col-12 fx-col-6-gt-1024
+        fx-col-3-gt-1280)
+    </div>
+    <div class="fx-col-12 fx-col-6-gt-1024 fx-col-3-gt-1280 themed-col3">COL3 (fx-col-12 fx-col-6-gt-1024
+        fx-col-3-gt-1280)
+    </div>
 </div>
 
+<h2>justify-content: flex-start (&lt;div class="fx-row fx-start"&gt;...&lt;/div&gt;)
+    <span class="themed-label">default</span>
+</h2>
+
+<div class="fx-row fx-start">
+    <div class="fx-col-3 themed-col1">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>justify-content: flex-end (&lt;div class="fx-row fx-end"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-end">
+    <div class="fx-col-3 themed-col1">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>justify-content: center (&lt;div class="fx-row fx-center"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-center">
+    <div class="fx-col-3 themed-col1">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>justify-content: space-between (&lt;div class="fx-row fx-sp-between"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-sp-between">
+    <div class="fx-col-3 themed-col1">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>justify-content: space-around (&lt;div class="fx-row fx-sp-around"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-sp-around">
+    <div class="fx-col-3 themed-col1">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>align-items: stretch (&lt;div class="fx-row fx-ai-stretch"&gt;...&lt;/div&gt;)
+    <span class="themed-label">default</span>
+</h2>
+
+<div class="fx-row fx-ai-stretch">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>align-items: center (&lt;div class="fx-row fx-ai-center"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-ai-center">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>align-items: start (&lt;div class="fx-row fx-ai-start"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-ai-start">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>align-items: end (&lt;div class="fx-row fx-ai-end"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-ai-end">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>align-items: baseline (&lt;div class="fx-row fx-ai-base"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-ai-base">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>align-items: initial (&lt;div class="fx-row fx-ai-initial"&gt;...&lt;/div&gt;)
+    <span class="themed-label">default</span>
+</h2>
+
+<div class="fx-row fx-ai-initial">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>align-items: inherit (&lt;div class="fx-row fx-ai-inherit"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-ai-inherit">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>flex-direction: row (&lt;div class="fx-row fx-dir-row"&gt;...&lt;/div&gt;)
+    <span class="themed-label">default</span>
+</h2>
+
+<div class="fx-row fx-dir-row">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>flex-direction: row-reverse (&lt;div class="fx-row fx-dir-row-rev"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-dir-row-rev">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>flex-direction: column (&lt;div class="fx-row fx-dir-col"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-dir-col">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>flex-direction: column-reverse (&lt;div class="fx-row fx-dir-col-rev"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-dir-col-rev">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>flex-direction: initial (&lt;div class="fx-row fx-dir-initial"&gt;...&lt;/div&gt;)
+    <span class="themed-label">default</span>
+</h2>
+
+<div class="fx-row fx-dir-initial">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
+
+<h2>flex-direction: inherit (&lt;div class="fx-row fx-dir-inherit"&gt;...&lt;/div&gt;)</h2>
+
+<div class="fx-row fx-dir-inherit">
+    <div class="fx-col-3 themed-col1" style="height: 200px;">COL1 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col2">COL2 (fx-col-3)</div>
+    <div class="fx-col-3 themed-col3">COL3 (fx-col-3)</div>
+</div>
 </body>
 </html>
