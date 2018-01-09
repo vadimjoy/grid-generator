@@ -1,13 +1,12 @@
-const config = require('./config.json');
 const path = require('path');
+const config = require('./config.json');
 const fs = require('fs');
 
 class Generator {
     constructor(config) {
         this.config = config;
-        this.output = './dist/grid.css';
-
-        let temp = fs.readFileSync(path.resolve('./src/grid.css'));
+        this.output = path.resolve(`./${config.path}/${config.filename}`);
+        let temp = fs.readFileSync(path.resolve(__dirname, './src/grid.css'));
         fs.writeFileSync(this.output, temp);
 
         this.model_max = (bp) => {
@@ -625,7 +624,14 @@ class Generator {
     }
 }
 
-let generator = new Generator(config);
-generator.generateMax();
-generator.generateMin();
+module.exports = function (user_config) {
+    let gen_config = {
+        breakpoints: user_config.breakpoints || config.breakpoints,
+        path: user_config.path || config.path,
+        filename: user_config.filename || config.filename
+    };
 
+    let gen = new Generator(gen_config);
+    gen.generateMax();
+    gen.generateMin();
+};

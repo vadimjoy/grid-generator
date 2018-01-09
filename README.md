@@ -1,26 +1,26 @@
 # grid-generator
 
-1) ```git clone```
-2) ```node grid-generator```
-3) copy **grid.css** from **dist** folder
+1) ```npm install grid-generator```
+2) create js file, for example: **grid-generator.js**
+3) into js file paste:
 
-#### config.json
-```json
-{
-  "breakpoints": [
-    1900,
-    1600,
-    1440,
-    1366,
-    1280,
-    1024,
-    800,
-    600,
-    480,
-    360
-  ]
-}
+```javascript
+const gen = require('grid-generator');
+
+gen({
+    breakpoints: [
+        1600, //examples
+        1280,
+        1024,
+        768,
+        480
+    ],
+    path: "src/common/styles", //example
+    filename: "grid.css" //examle
+});
 ```
+
+4) type ```node grid-generator``` to execute the script
 
 #### example
 [grid-generator](https://vadimjoy.github.io/grid-generator/)

@@ -1,0 +1,28 @@
+{
+  "name": "grid-generator",
+  "version": "1.0.0",
+  "description": "generate a grid with breakpoints specified by the configuration",
+  "main": "grid-generator.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node grid-generator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadimjoy/grid-generator.git"
+  },
+  "keywords": [
+    "grid",
+    "generator",
+    "grid",
+    "generator",
+    "grid-generator"
+  ],
+  "author": "Vadim Joy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vadimjoy/grid-generator/issues"
+  },
+  "homepage": "https://github.com/vadimjoy/grid-generator#readme"
+}

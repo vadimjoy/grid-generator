@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grid-generator' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData grid-generator
+8 silly fetchNamedPackageData grid-generator
+9 silly mapToRegistry name grid-generator
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'grid-generator',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'grid-generator',
+12 silly mapToRegistry   name: 'grid-generator',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/grid-generator
+14 verbose request uri https://registry.npmjs.org/grid-generator
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 14:59:00
+17 verbose request using bearer token for auth
+18 verbose request id 1dc524cb55ab6a2d
+19 http request GET https://registry.npmjs.org/grid-generator
+20 http 200 https://registry.npmjs.org/grid-generator
+21 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+21 verbose headers   server: 'UploadServer',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'last-modified': 'Tue, 9 Jan 2018 9:57:30 GMT',
+21 verbose headers   etag: '"5a54920a-951"',
+21 verbose headers   'content-encoding': 'gzip',
+21 verbose headers   'content-length': '880',
+21 verbose headers   'accept-ranges': 'bytes',
+21 verbose headers   date: 'Tue, 09 Jan 2018 09:59:01 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   age: '0',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-ams4435-AMS',
+21 verbose headers   'x-cache': 'MISS',
+21 verbose headers   'x-cache-hits': '0',
+21 verbose headers   'x-timer': 'S1515491941.997539,VS0,VE267',
+21 verbose headers   vary: 'Accept-Encoding, Accept' }
+22 silly get cb [ 200,
+22 silly get   { 'content-type': 'application/json; charset=UTF-8',
+22 silly get     server: 'UploadServer',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'last-modified': 'Tue, 9 Jan 2018 9:57:30 GMT',
+22 silly get     etag: '"5a54920a-951"',
+22 silly get     'content-encoding': 'gzip',
+22 silly get     'content-length': '880',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Tue, 09 Jan 2018 09:59:01 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '0',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-ams4435-AMS',
+22 silly get     'x-cache': 'MISS',
+22 silly get     'x-cache-hits': '0',
+22 silly get     'x-timer': 'S1515491941.997539,VS0,VE267',
+22 silly get     vary: 'Accept-Encoding, Accept' } ]
+23 verbose get saving grid-generator to C:\Users\zhoydik_vv\AppData\Roaming\npm-cache\registry.npmjs.org\grid-generator\.cache.json
+24 verbose correctMkdir C:\Users\zhoydik_vv\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly rollbackFailedOptional Starting
+38 silly rollbackFailedOptional Finishing
+39 silly runTopLevelLifecycles Finishing
+40 silly install printInstalled
+41 verbose stack Error: Refusing to install grid-generator as a dependency of itself
+41 verbose stack     at checkSelf (C:\Program Files\nodejs\node_modules\npm\lib\install\validate-args.js:53:14)
+41 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+41 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+41 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+41 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install\validate-args.js:16:5
+41 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:52:35
+41 verbose stack     at Array.forEach (native)
+41 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:52:11
+41 verbose stack     at Array.forEach (native)
+41 verbose stack     at asyncMap (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:51:8)
+42 verbose cwd D:\OpenServer\domains\grid-generator
+43 error Windows_NT 6.1.7601
+44 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grid-generator"
+45 error node v6.9.1
+46 error npm  v3.10.8
+47 error code ENOSELF
+48 error Refusing to install grid-generator as a dependency of itself
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

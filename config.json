@@ -10,5 +10,7 @@
     600,
     480,
     360
-  ]
+  ],
+  "path": "dist",
+  "filename": "grid.css"
 }
