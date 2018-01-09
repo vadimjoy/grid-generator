@@ -1,6 +1,6 @@
 {
   "name": "grid-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generate a grid with breakpoints specified by the configuration",
   "main": "grid-generator.js",
   "dependencies": {},
