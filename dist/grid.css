@@ -136,6 +136,18 @@
     flex-wrap: wrap-reverse;
 }
 
+.fx-wrap-initial {
+    -ms-flex-wrap: initial;
+    -webkit-flex-wrap: initial;
+    flex-wrap: initial;
+}
+
+.fx-wrap-inherit {
+    -ms-flex-wrap: inherit;
+    -webkit-flex-wrap: inherit;
+    flex-wrap: inherit;
+}
+
 /* With flex-direction & flex-wrap*/
 .fx-ac-start {
     -ms-align-content: flex-start;
@@ -171,6 +183,18 @@
     -ms-align-content: stretch;
     -webkit-align-content: stretch;
     align-content: stretch;
+}
+
+.fx-ac-initial {
+    -ms-align-content: initial;
+    -webkit-align-content: initial;
+    align-content: initial;
+}
+
+.fx-ac-inherit {
+    -ms-align-content: inherit;
+    -webkit-align-content: inherit;
+    align-content: inherit;
 }
 
 .fx-col-auto {
@@ -408,6 +432,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-1900 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-1900 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-1900 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -442,6 +478,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-1900 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-1900 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-1900 {
@@ -537,7 +585,7 @@
     }
 
     .fx-hidden-1900 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -680,6 +728,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-1600 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-1600 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-1600 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -714,6 +774,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-1600 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-1600 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-1600 {
@@ -809,7 +881,7 @@
     }
 
     .fx-hidden-1600 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -952,6 +1024,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-1440 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-1440 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-1440 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -986,6 +1070,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-1440 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-1440 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-1440 {
@@ -1081,7 +1177,7 @@
     }
 
     .fx-hidden-1440 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -1224,6 +1320,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-1366 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-1366 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-1366 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -1258,6 +1366,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-1366 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-1366 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-1366 {
@@ -1353,7 +1473,7 @@
     }
 
     .fx-hidden-1366 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -1496,6 +1616,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-1280 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-1280 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-1280 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -1530,6 +1662,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-1280 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-1280 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-1280 {
@@ -1625,7 +1769,7 @@
     }
 
     .fx-hidden-1280 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -1768,6 +1912,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-1024 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-1024 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-1024 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -1802,6 +1958,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-1024 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-1024 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-1024 {
@@ -1897,7 +2065,7 @@
     }
 
     .fx-hidden-1024 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -2040,6 +2208,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-800 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-800 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-800 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -2074,6 +2254,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-800 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-800 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-800 {
@@ -2169,7 +2361,7 @@
     }
 
     .fx-hidden-800 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -2312,6 +2504,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-600 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-600 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-600 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -2346,6 +2550,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-600 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-600 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-600 {
@@ -2441,7 +2657,7 @@
     }
 
     .fx-hidden-600 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -2584,6 +2800,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-480 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-480 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-480 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -2618,6 +2846,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-480 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-480 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-480 {
@@ -2713,7 +2953,7 @@
     }
 
     .fx-hidden-480 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -2856,6 +3096,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-360 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-360 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-360 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -2890,6 +3142,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-360 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-360 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-360 {
@@ -2985,7 +3249,7 @@
     }
 
     .fx-hidden-360 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -3128,6 +3392,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-gt-360 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-gt-360 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-gt-360 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -3162,6 +3438,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-gt-360 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-gt-360 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-gt-360 {
@@ -3257,7 +3545,7 @@
     }
 
     .fx-hidden-gt-360 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -3400,6 +3688,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-gt-480 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-gt-480 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-gt-480 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -3434,6 +3734,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-gt-480 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-gt-480 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-gt-480 {
@@ -3529,7 +3841,7 @@
     }
 
     .fx-hidden-gt-480 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -3672,6 +3984,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-gt-600 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-gt-600 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-gt-600 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -3706,6 +4030,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-gt-600 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-gt-600 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-gt-600 {
@@ -3801,7 +4137,7 @@
     }
 
     .fx-hidden-gt-600 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -3944,6 +4280,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-gt-800 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-gt-800 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-gt-800 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -3978,6 +4326,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-gt-800 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-gt-800 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-gt-800 {
@@ -4073,7 +4433,7 @@
     }
 
     .fx-hidden-gt-800 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -4216,6 +4576,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-gt-1024 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-gt-1024 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-gt-1024 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -4250,6 +4622,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-gt-1024 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-gt-1024 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-gt-1024 {
@@ -4345,7 +4729,7 @@
     }
 
     .fx-hidden-gt-1024 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -4488,6 +4872,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-gt-1280 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-gt-1280 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-gt-1280 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -4522,6 +4918,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-gt-1280 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-gt-1280 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-gt-1280 {
@@ -4617,7 +5025,7 @@
     }
 
     .fx-hidden-gt-1280 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -4760,6 +5168,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-gt-1366 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-gt-1366 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-gt-1366 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -4794,6 +5214,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-gt-1366 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-gt-1366 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-gt-1366 {
@@ -4889,7 +5321,7 @@
     }
 
     .fx-hidden-gt-1366 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -5032,6 +5464,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-gt-1440 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-gt-1440 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-gt-1440 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -5066,6 +5510,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-gt-1440 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-gt-1440 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-gt-1440 {
@@ -5161,7 +5617,7 @@
     }
 
     .fx-hidden-gt-1440 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -5304,6 +5760,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-gt-1600 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-gt-1600 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-gt-1600 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -5338,6 +5806,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-gt-1600 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-gt-1600 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-gt-1600 {
@@ -5433,7 +5913,7 @@
     }
 
     .fx-hidden-gt-1600 {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -5576,6 +6056,18 @@
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-gt-1900 {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-gt-1900 {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-gt-1900 {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -5610,6 +6102,18 @@
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-gt-1900 {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-gt-1900 {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-gt-1900 {
@@ -5705,6 +6209,6 @@
     }
 
     .fx-hidden-gt-1900 {
-        display: none!important;
+        display: none !important;
     }
 }

@@ -136,6 +136,18 @@
     flex-wrap: wrap-reverse;
 }
 
+.fx-wrap-initial {
+    -ms-flex-wrap: initial;
+    -webkit-flex-wrap: initial;
+    flex-wrap: initial;
+}
+
+.fx-wrap-inherit {
+    -ms-flex-wrap: inherit;
+    -webkit-flex-wrap: inherit;
+    flex-wrap: inherit;
+}
+
 /* With flex-direction & flex-wrap*/
 .fx-ac-start {
     -ms-align-content: flex-start;
@@ -171,6 +183,18 @@
     -ms-align-content: stretch;
     -webkit-align-content: stretch;
     align-content: stretch;
+}
+
+.fx-ac-initial {
+    -ms-align-content: initial;
+    -webkit-align-content: initial;
+    align-content: initial;
+}
+
+.fx-ac-inherit {
+    -ms-align-content: inherit;
+    -webkit-align-content: inherit;
+    align-content: inherit;
 }
 
 .fx-col-auto {

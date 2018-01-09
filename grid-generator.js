@@ -152,6 +152,18 @@ class Generator {
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-${bp} {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-${bp} {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-${bp} {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -186,6 +198,18 @@ class Generator {
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-${bp} {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-${bp} {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-${bp} {
@@ -281,7 +305,7 @@ class Generator {
     }
 
     .fx-hidden-${bp} {
-        display: none!important;
+        display: none !important;
     }
 }`
         };
@@ -428,6 +452,18 @@ class Generator {
         flex-wrap: wrap-reverse;
     }
 
+    .fx-wrap-initial-${prefix}-${bp} {
+        -ms-flex-wrap: initial;
+        -webkit-flex-wrap: initial;
+        flex-wrap: initial;
+    }
+
+    .fx-wrap-inherit-${prefix}-${bp} {
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+    }
+
     .fx-ac-start-${prefix}-${bp} {
         -ms-align-content: flex-start;
         -webkit-align-content: flex-start;
@@ -462,6 +498,18 @@ class Generator {
         -ms-align-content: stretch;
         -webkit-align-content: stretch;
         align-content: stretch;
+    }
+
+    .fx-ac-initial-${prefix}-${bp} {
+        -ms-align-content: initial;
+        -webkit-align-content: initial;
+        align-content: initial;
+    }
+
+    .fx-ac-inherit-${prefix}-${bp} {
+        -ms-align-content: inherit;
+        -webkit-align-content: inherit;
+        align-content: inherit;
     }
 
     .fx-col-auto-${prefix}-${bp} {
@@ -557,7 +605,7 @@ class Generator {
     }
 
     .fx-hidden-${prefix}-${bp} {
-        display: none!important;
+        display: none !important;
     }
 }`
         }
