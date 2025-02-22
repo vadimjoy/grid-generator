@@ -2,7 +2,6 @@
 
 1) ```npm install grid-generator```
 2) create js file, for example: **grid-generator.js**
-3) into created file paste:
 
 ```javascript
 const gen = require('grid-generator');
